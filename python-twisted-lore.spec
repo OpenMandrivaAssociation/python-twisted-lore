@@ -6,6 +6,7 @@ Source0:        http://tmrc.mit.edu/mirror/twisted/Lore/0.2/TwistedLore-%{versio
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/lore/
+BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 #BuildArch:      noarch
 Requires:       python-twisted-core
