@@ -1,11 +1,14 @@
+%define version 8.1.0
+%define rel 1
+
 Summary:        A documentation generator
 Name:           python-twisted-lore
-Version:        0.2.0
-Release:        %mkrel 2
-Source0:        http://tmrc.mit.edu/mirror/twisted/Lore/0.2/TwistedLore-%{version}.tar.bz2
+Version:        %version
+Release:        %mkrel %rel
+Source0:        http://tmrc.mit.edu/mirror/twisted/Lore/8.1/TwistedLore-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
-URL:            http://twistedmatrix.com/projects/lore/
+URL:            http://twistedmatrix.com/trac/wiki/TwistedLore
 BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 #BuildArch:      noarch
