@@ -1,5 +1,5 @@
 %define version 8.1.0
-%define rel 1
+%define rel 2
 
 Summary:        A documentation generator
 Name:           python-twisted-lore
