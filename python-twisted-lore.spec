@@ -1,5 +1,5 @@
-%define version 8.1.0
-%define rel 2
+%define version 8.2.0
+%define rel 1
 
 Summary:        A documentation generator
 Name:           python-twisted-lore
@@ -27,7 +27,7 @@ framework.
 
 %install
 %__rm -rf %buildroot
-%__python setup.py install --root  %buildroot --install-purelib=%py_platsitedir 
+%__python setup.py install --root  %buildroot --install-purelib=%py_platsitedir
 
 %__install -d                      %buildroot%_mandir/man1
 %__install -m 644 doc/man/*.1      %buildroot%_mandir/man1
