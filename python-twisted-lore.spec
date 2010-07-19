@@ -1,11 +1,12 @@
-%define version 10.0.0
+%define name python-twisted-lore
+%define version 10.1.0
 %define rel 1
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        A documentation generator
-Name:           python-twisted-lore
-Version:        %version
-Release:        %mkrel %rel
+Name:           %{name}
+Version:        %{version}
+Release:        %mkrel %{rel}
 Source0:        http://tmrc.mit.edu/mirror/twisted/Lore/%{mainver}/TwistedLore-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
@@ -20,21 +21,22 @@ Requires:       python-twisted-web
 %description
 Twisted Lore is the documentation generator of the Twisted matrix
 framework.
+
 %prep
-%setup -q -n TwistedLore-%version
+%setup -q -n TwistedLore-%{version}
 
 %build
 %__python setup.py build
 
 %install
-%__rm -rf %buildroot
-%__python setup.py install --root  %buildroot --install-purelib=%py_platsitedir
+%__rm -rf %{buildroot}
+%__python setup.py install --root=%{buildroot} --install-purelib=%{py_platsitedir}
 
-%__install -d                      %buildroot%_mandir/man1
-%__install -m 644 doc/man/*.1      %buildroot%_mandir/man1
+%__install -d %{buildroot}%{_mandir}/man1
+%__install -m 644 doc/man/*.1 %{buildroot}%{_mandir}/man1
 
 %clean
-%__rm -rf %buildroot
+%__rm -rf %{buildroot}
 
 %files
 %defattr(0755,root,root,0755)
