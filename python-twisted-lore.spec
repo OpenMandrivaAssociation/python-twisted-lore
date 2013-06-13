@@ -1,6 +1,3 @@
-%define name python-twisted-lore
-%define version 12.2.0
-%define rel 1
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 # There is no debug here, but can't build as noarch,
@@ -9,10 +6,10 @@
 %define debug_package %{nil}
 
 Summary:        A documentation generator
-Name:           %{name}
-Version:        %{version}
-Release:        %mkrel %{rel}
-Source0:        http://tmrc.mit.edu/mirror/twisted/Lore/%{mainver}/TwistedLore-%{version}.tar.bz2
+Name:           python-twisted-lore
+Version:        13.0.0
+Release:        1
+Source0:        http://twistedmatrix.com/Releases/Lore/13.0/TwistedLore-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedLore
