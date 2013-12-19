@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   TwistedLore-13.0.0.tar.bz2: 5265297e35a40a1bd1270fda10b220fdceeb1eb1
+sources:
+  TwistedLore-13.1.0.tar.bz2: da713fc6ee9db045dabb76352de92f4146bd6659
