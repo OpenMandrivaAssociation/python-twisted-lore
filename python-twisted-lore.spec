@@ -8,7 +8,7 @@
 Summary:        A documentation generator
 Name:           python-twisted-lore
 Version:        13.0.0
-Release:        1
+Release:        2
 Source0:        http://twistedmatrix.com/Releases/Lore/13.0/TwistedLore-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
