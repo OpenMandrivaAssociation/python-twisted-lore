@@ -6,13 +6,14 @@
 %define debug_package %{nil}
 
 Summary:	A documentation generator
+
 Name:		python-twisted-lore
-Version:	13.1.0
+Version:	13.2.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedLore
-Source0:	http://twistedmatrix.com/Releases/Lore/13.1/TwistedLore-%{version}.tar.bz2
+Source0:	http://twistedmatrix.com/Releases/Lore/13.2/TwistedLore-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
 Requires:	python-twisted-core
@@ -45,5 +46,6 @@ install -m 644 doc/man/*.1 %{buildroot}%{_mandir}/man1
 %{py_platsitedir}/twisted/plugins/*
 %{py_platsitedir}/*.egg-info
 %{_mandir}/man1/*
+
 
 
