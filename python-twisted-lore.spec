@@ -12,7 +12,7 @@ Version:	13.2.0
 Release:	2
 License:	MIT
 Group:		Development/Python
-Url:		http://twistedmatrix.com/trac/wiki/TwistedLore
+Url:		https://twistedmatrix.com/trac/wiki/TwistedLore
 Source0:	http://twistedmatrix.com/Releases/Lore/13.2/TwistedLore-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
